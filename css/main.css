@@ -9,11 +9,11 @@ html {
 }
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6999), rgba(255, 255, 255, 0.075));
-    position: fixed;
     width: 100%;
     position: relative;
     text-align: center;
     border-bottom: 2px solid white;
+    z-index: 9999;
 }
 
 header img {
@@ -24,13 +24,14 @@ header img {
 body {
     display: flex;
     flex-direction: column;
-
+    scroll-behavior: smooth;
 }
 #backgroundDiv {
     background-image: url(../images/background-img.jpg);
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: center;
+    height: 100vh;
 }
 
 /* ~~~~~~~ Nav_bar ~~~~~~~ */
@@ -60,7 +61,7 @@ body {
     display: none;
     position: absolute;
     top: 100%;
-    border-left: 6px solid #ffd038;
+    border-left: 5px solid #ffd038;
 }
 
 #nav_bar ul ul li a {
@@ -90,7 +91,7 @@ main {
     color: rgb(255, 248, 238);
     font-size: 400%;
     opacity: 50%;
-    position: relative;
+    /* position: relative; */
     height: 820px;
     display: flex;
     justify-content: center;
@@ -102,10 +103,15 @@ main {
     transform: translate(-50%, 0%);
     animation: fade_move_down 5s infinite;
     position: absolute;
+    bottom: -15px;
     background-color: rgba(240, 248, 255, 0);
     border: 0px solid black;
     font-size: 140%;
-    /* transition: ease all 300ms; */
+    /* transition: all 300ms ease; */
+    /* scroll-behavior: smooth; */
+}
+.one a:hover {
+    font-size: 150%;
 }
 .one h2 {
     opacity: 0%;
@@ -167,6 +173,14 @@ h3 {
     margin-left: 1.5em;
     margin-right: 1.5em;
     border-radius: 15px;
+    filter: saturate(90%);
+}
+.grid-item img:hover {
+    /* border: 2px solid black; */
+    box-shadow: 1px 1px 20px black;
+    max-width: 455px;
+    max-height: 455px;
+    filter: saturate(150%);
 }
 .etwo {
     padding: .75em;
@@ -184,6 +198,10 @@ h3 {
 .three img {
     max-height: 150px;
     height: 100%;
+}
+.three img:hover {
+    filter: brightness(150%);
+    max-height: 155px;
 }
 .four h3 {
     margin-bottom: 4vh;
@@ -203,7 +221,8 @@ h3 {
 }
 footer {
     margin-top: auto;
-    padding: 4em;
+    padding-bottom: 1.5em;
+    padding-top: 4em;
     font-size: 100%;
     background-color: white;
     color: rgb(79, 78, 78);
@@ -229,7 +248,10 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 767px) {
-    body {
+    header {
+        position: relative;
+    }
+    #backgroundDiv   {
         background-image: url(../images/imgB.jpg);
     }
     .one {
@@ -237,10 +259,40 @@ footer a:hover {
     }
     .one h2 {
         opacity: 100%;
-        font-size: 150%;
-        margin-top: 40vh;
+        font-size: 100%;
+        margin-top: 27vh;
     }
-
-
-
+    #nav_bar {
+        display: none;
+    }
+    #mobilemenu {
+        display: block;
+    }
+    #twodiv {
+        margin: 0;
+    }
+    #twobytwo {
+        flex-wrap: nowrap;
+        /* margin-right: 10vw; */
+    }
+    .grid-item img {
+        max-width: 350px;
+        max-height: 350px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 1em;
+    }
+    .etwo {
+        padding: 0;
+    }
+    .three h3 {
+        font-size: 200%;
+    }
+    .three img {
+        max-height: 100px;
+    }
+    .videowrapper video {
+        height: 90%;
+        width: 90%;
+    }
 }
