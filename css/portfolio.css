@@ -58,7 +58,7 @@ body {
 #nav_bar ul ul {
   width: 100%;
   display: none;
-  position: absolute;
+  position: relative;
   top: 100%;
   border-left: 4px solid rgb(255, 0, 0);
 }
@@ -83,14 +83,14 @@ main {
   height: 820px;
 }
 /* Create two equal columns that floats next to each other */
-.column {
+/* .column {
   float: left;
   width: 50%;
   padding: 10px;
-}
+} */
 
-.row .col img {
-  max-width: 150px;
+.row img {
+  max-width: 500px;
   width: 100%; 
 }
 
