@@ -24,7 +24,7 @@ body {
     flex-direction: column;
 }
 #backgroundDiv {
-    background-image: url(../images/boatBackground.jpg);
+    background-image: url(../images/Img-marine.jpg);
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: top;
