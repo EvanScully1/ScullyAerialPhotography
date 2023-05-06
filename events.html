@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
     <link rel="stylesheet" href="css/events.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel"> 
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -41,19 +41,41 @@
             <!-- <button onclick="nextSection()" id="downButton" style="position:fixed">&#8595;</button> -->
             <a href="#e-two" title="Next Section">&#8595;</a>
         </div>
+    
+        <div class="e" id="e-two"><p>&nbsp;</p></div>
+        <main>
+            <!-- <div class="e" id="e-two"><p>&nbsp;</p></div> -->
+            <div class="container">
+                <div class="imagecarousel">
+                    <div class="image fadeout"><img src="images/events/event1.JPG" alt="img1"></div>
+                    <div class="image fadeout"><img src="images/events/events2.JPG" alt="img2"></div>
+                    <div class="image fadeout"><img src="images/events/events3.JPG" alt="img3"></div>
+                    <div class="image fadeout"><img src="images/events/events4.JPG" alt="img4"></div>
+                    <div class="image fadeout"><img src="images/events/events5.JPG" alt="img5"></div>
+                    <div class="image fadeout"><img src="images/events/events6.JPG" alt="img6"></div>
+                    <div class="prev" onclick="showImage(-1)"><i class="fa-regular fa-angles-right fa-rotate-180"></i></div>
+                    <div class="next" onclick="showImage(1)"><i class="fa-regular fa-angles-right"></i></div>
+                </div>
+            </div>
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </main>
     </div>
-    <div class="e" id="e-two"><p>&nbsp;</p></div>
-    <main>
-        <div>
-            <p>Events Page Work In Progress</p> 
-        </div>
-    </main>
-    <footer>
-		<p><span id="time"></span> Scully Aerial Photography</p>
-        <a href="../Final Website/contact.html">Contact</a>
-        <a href="../Final Website/about.html">Learn More</a>
-    </footer>
-	<!-- JavaScript -->
-    <script src="js/script.js"></script>
 </body>
+<footer>
+    <p><span id="time"></span> Scully Aerial Photography</p>
+    <a href="../Final Website/contact.html">Contact</a>
+    <a href="../Final Website/about.html">Learn More</a>
+</footer>
+<!-- JavaScript -->
+<script src="js/script.js"></script>
+
+
+<script src="js/script.js"></script>
+
 </html>

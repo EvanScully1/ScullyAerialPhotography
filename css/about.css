@@ -117,13 +117,13 @@ main {
   50%  { opacity: 1;  }
   100% { transform:translate(0,10px); opacity: 0; }
 }
-.circle {
+/* .circle {
     border-radius: 50%;
     width: 300px;
     height: 300px;
     padding: 10em;
-}
-.circle h4 {
+} */
+/* .circle h4 {
     font-size: 200%;
     text-align: center;
     margin-top: 0;
@@ -133,8 +133,8 @@ main {
     text-align: center;
     width: 50%;
     text-shadow: .75px .75px 19px rgba(0, 0, 0, 0.5);
-}
-#first-left-circle {
+} */
+/* #first-left-circle {
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -145,7 +145,6 @@ main {
     display: flex;
     flex-direction: row;
     align-self: flex-end;
-    /* justify-content: flex-end; */
 }
 #second-left-circle {
     background-color: rgb(82, 82, 82);
@@ -160,6 +159,38 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+} */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+  
+.grid-item {
+    border-radius: 50%;
+    /* padding: 20px; */
+    font-size: 200%;
+    text-align: center;
+}
+#grid-item1 {
+    background-color: white;
+    padding: 5em;
+}
+#grid-item2 {
+    background-color: darkgrey;
+    padding: 5em;
+
+}
+#grid-item3 {
+    background-color: rgb(82, 82, 82);
+    padding: 5em;
+    color: white;
+}
+#grid-item4 {
+    background-color: black;
+    padding: 5em;
+    color: white;
 }
 footer {
     margin-top: auto;
